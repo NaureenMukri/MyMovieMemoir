@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">MyMovieMemoir</string>
+    <string name="Open">open</string>
+    <string name="Close">close</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="postcode">Postcode</string>
+    <string name="state">State:</string>
+    <string name="address">Address</string>
+    <string name="tab">\u0009</string>
+    <string name="no_account_yet_create_one">No account yet? Create one</string>
+    <string name="pie_chart_desc">Movies Watched in the Given Time Period</string>
+    <string-array name="Sort_By">
+        <item>User Rating</item>
+        <item>Release Date</item>
+        <item>Public Review Score</item>
+    </string-array>
+    <string-array name="year">
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
+    <string-array name="States">
+        <item>Select One</item>
+        <item>VIC</item>
+        <item>NSW</item>
+        <item>QLD</item>
+        <item>SA</item>
+        <item>WA</item>
+        <item>TAS</item>
+    </string-array>
+    <string-array name="Cinema_Names">
+        <item>Village Cinemas Crown</item>
+        <item>IMAX Melbourne Musuem</item>
+        <item>Kino Cinemas Melbourne</item>
+        <item>HOYTS</item>
+        <item>Classic Cinemas</item>
+        <item>The Astor Theatre</item>
+        <item>Palace Cinema Como</item>
+        <item>Village Cinemas Rivoli</item>
+        <item>Westpac OpenAir Sydney</item>
+        <item>Golden Age Cinema and Bar</item>
+        <item>Event Cinemas Pacific Air</item>
+    </string-array>
+    <string-array name="Cinema_PostCode">
+        <item>3006</item>
+        <item>3053</item>
+        <item>3000</item>
+        <item>3121</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>

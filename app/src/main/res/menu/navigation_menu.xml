@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homepage"
+        android:title="Home" />
+    <item
+        android:id="@+id/moviesearch"
+        android:title="Movie Search" />
+    <item
+        android:id="@+id/watchlist"
+        android:title="WatchList"/>
+    <item
+        android:id="@+id/MyMemoir"
+        android:title="My Memoir"/>
+
+    <item
+        android:id="@+id/PieChartReport"
+        android:title="Pie Chart"/>
+    <item
+        android:id="@+id/BarChartReport"
+        android:title="Bar Graph"/>
+    <item
+        android:id="@+id/Maps"
+        android:title="Map"/>
+</menu>
+

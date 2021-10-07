@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".AddToMemoir">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="106dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_movieimg"
+                android:layout_width="87dp"
+                android:layout_height="81dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="44dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/addmovieTitle"
+                android:layout_width="275dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Add Movie to Memoir"
+                android:textColor="@color/colorSecondaryDark"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_movieimg" />
+
+            <TextView
+                android:id="@+id/memoir_movieName"
+                android:layout_width="358dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="10dp"
+                android:text="Movie Name"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addmovieTitle"/>
+
+            <TextView
+                android:id="@+id/memoir_movieReleaseDate"
+                android:layout_width="173dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="10dp"
+                android:text="Movie Release Date:"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/memoir_movieName" />
+
+
+            <TextView
+                android:id="@+id/memoir_movieReleaseDate_value"
+                android:layout_width="173dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="11dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/memoir_movieName" />
+
+            <TextView
+                android:id="@+id/memoir_movieDateTime"
+                android:layout_width="173dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="10dp"
+                android:text="Added to WatchList On:"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/memoir_movieReleaseDate" />
+
+
+            <TextView
+                android:id="@+id/memoir_movieDateTime_value"
+                android:layout_width="173dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/memoir_movieReleaseDate_value" />
+
+            <TextView
+                android:id="@+id/memoir_tv_DateMovieWatched"
+                android:layout_width="358dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="Date Movie Watched:"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/memoir_movieDateTime" />
+
+            <DatePicker
+                android:id="@+id/date_picker_movie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_weight="1"
+                android:background="#75FFFFFF"
+                android:focusedMonthDateColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/memoir_tv_DateMovieWatched"
+                app:layout_editor_absoluteX="26dp"
+                app:layout_editor_absoluteY="620dp" />
+
+            <TextView
+                android:id="@+id/tv_TimeMovieWatched"
+                android:layout_width="358dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="10dp"
+                android:text="Time Movie Watched:"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/date_picker_movie"/>
+
+            <TimePicker
+                android:id="@+id/memoir_time_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="76dp"
+                android:layout_marginTop="24dp"
+                android:timePickerMode="spinner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_TimeMovieWatched" />
+
+            <TextView
+                android:id="@+id/memoir_movieCinemaName"
+                android:layout_width="365dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="26dp"
+                android:text="Cinema Name:"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/memoir_time_picker" />
+
+            <Spinner
+                android:id="@+id/spinner_movieCinemaName"
+                android:layout_width="362dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="3dp"
+                android:background="#A8FFB949"
+                android:backgroundTint="@color/colorSecondary"
+                android:entries="@array/Cinema_Names"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/memoir_movieCinemaName" />
+
+            <TextView
+                android:id="@+id/memoir_movieCinemaPostCode"
+                android:layout_width="365dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="26dp"
+                android:text="Cinema Name:"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_movieCinemaName" />
+
+            <Spinner
+                android:id="@+id/spinner_movieCinemaPostCode"
+                android:layout_width="362dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="3dp"
+                android:background="#A8FFB949"
+                android:backgroundTint="@color/colorSecondary"
+                android:textColor="#FFFFFF"
+                android:entries="@array/Cinema_PostCode"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/memoir_movieCinemaPostCode" />
+
+            <TextView
+                android:id="@+id/memoir_moviesummary"
+                android:layout_width="365dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="26dp"
+                android:text="Feedback on the Movie:"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_movieCinemaPostCode" />
+
+            <EditText
+                android:id="@+id/memoir_moviesummary_value"
+                android:layout_width="367dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="24dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/memoir_moviesummary" />
+
+            <TextView
+                android:id="@+id/memoir_movieRating"
+                android:layout_width="365dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="26dp"
+                android:text="Movie Rating[from 1 to 5]:"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/memoir_moviesummary_value" />
+
+
+            <RatingBar
+                android:id="@+id/ratingBar_addMovieRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:numStars="5"
+                android:rating="3.5"
+                app:layout_constraintTop_toBottomOf="@+id/memoir_movieRating"
+                tools:layout_editor_absoluteX="85dp" />
+
+            <Button
+                android:id="@+id/button_add_movie_memoir"
+                android:layout_width="201dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="104dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorSecondary"
+                android:elevation="3dp"
+                android:text="Create My Movie Memoir"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar_addMovieRating" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

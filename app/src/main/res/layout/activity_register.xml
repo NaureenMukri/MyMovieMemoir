@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/iv_signupimg"
+                android:layout_width="121dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="144dp"
+                android:layout_marginTop="44dp"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/moviep" />
+
+            <TextView
+                android:id="@+id/tv_RegisterTitle"
+                android:layout_width="276dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="45dp"
+                android:gravity="center"
+                android:text="REGISTER TO MY MOVIE MEMOIR"
+                android:textColor="@color/colorSecondaryDark"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_signupimg" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_tf_email"
+                android:layout_width="365dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="23dp"
+                android:hint="Email ID"
+                android:textColorHint="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_RegisterTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_it_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    tools:layout_editor_absoluteX="23dp"
+                    tools:layout_editor_absoluteY="200dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_tf_password"
+                android:layout_width="365dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="23dp"
+                android:hint="Password"
+                app:endIconMode="password_toggle"
+                app:endIconTint="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_tf_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_it_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:inputType="textPassword"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    tools:layout_editor_absoluteX="23dp"
+                    tools:layout_editor_absoluteY="255dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_tf_confirmpassword"
+                android:layout_width="365dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="23dp"
+                android:hint="Confirm Password"
+                android:textColorHint="#FFFFFF"
+                app:endIconMode="password_toggle"
+                app:endIconTint="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_tf_password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_it_confirmpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:inputType="textPassword"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    tools:layout_editor_absoluteX="23dp"
+                    tools:layout_editor_absoluteY="310dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_tf_firstName"
+                android:layout_width="365dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="23dp"
+                android:hint="First Name"
+                android:textColorHint="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_tf_confirmpassword">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_it_firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    tools:layout_editor_absoluteX="23dp"
+                    tools:layout_editor_absoluteY="365dp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_tf_lastName"
+                android:layout_width="365dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="23dp"
+                android:hint="Last Name"
+                android:textColorHint="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_tf_firstName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_it_lastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    tools:layout_editor_absoluteX="23dp"
+                    tools:layout_editor_absoluteY="415dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="365dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="3dp"
+                android:text="Gender:"
+                android:textColor="#FFFFFF"
+                android:textSize="19dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_tf_lastName" />
+
+
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="23dp"
+                android:background="#A8FFB949"
+                android:backgroundTint="@color/colorSecondary"
+                android:orientation="horizontal"
+                android:checkedButton="@id/genderradioButton1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_gender">
+
+                <RadioButton
+                    android:id="@+id/genderradioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Female"
+                    android:textColor="#FFFFFF"
+                    tools:layout_editor_absoluteX="160dp"
+                    tools:layout_editor_absoluteY="5200dp" />
+
+                <RadioButton
+                    android:id="@+id/genderradioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="Male"
+                    android:textColor="#FFFFFF"
+                    tools:layout_editor_absoluteX="23dp"
+                    tools:layout_editor_absoluteY="520dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_DateOfBirth"
+                android:layout_width="358dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="10dp"
+                android:text="Date Of Birth:"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/genderRadioGroup" />
+
+            <DatePicker
+                android:id="@+id/date_picker_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_weight="1"
+                android:background="#75FFFFFF"
+                android:focusedMonthDateColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_DateOfBirth"
+                app:layout_editor_absoluteX="26dp"
+                app:layout_editor_absoluteY="620dp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_tf_address"
+                android:layout_width="365dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="23dp"
+                android:hint="@string/address"
+                android:textColorHint="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/date_picker_dob">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_it_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:inputType="textPostalAddress"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    tools:layout_editor_absoluteX="23dp"
+                    tools:layout_editor_absoluteY="1000dp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="365dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="26dp"
+                android:text="@string/state"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_tf_address" />
+
+            <Spinner
+                android:id="@+id/spinner_state"
+                android:layout_width="362dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="3dp"
+                android:background="#A8FFB949"
+                android:backgroundTint="@color/colorSecondary"
+                android:entries="@array/States"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_state" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_tf_postcode"
+                android:layout_width="365dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="23dp"
+                android:hint="@string/postcode"
+                android:textColorHint="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_state">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_it_postcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:inputType="number"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    tools:layout_editor_absoluteX="23dp"
+                    tools:layout_editor_absoluteY="1600dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="196dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="43dp"
+                android:layout_marginEnd="106dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorSecondary"
+                android:elevation="10dp"
+                android:text="Register"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_tf_postcode">
+
+            </Button>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

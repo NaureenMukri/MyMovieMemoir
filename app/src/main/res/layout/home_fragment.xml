@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layers">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:text="Welcome "
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="135dp"
+        android:text="_____"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_welcome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="134dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/moviep" />
+
+    <TextView
+        android:id="@+id/tv_currentdate_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="20dp"
+        android:text="TODAY IS:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/tv_currentdate_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="281dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_currentdate_label"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_topfivemovies_label"
+        android:layout_width="284dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="YOUR TOP 5 MOVIES:"
+        android:textSize="21dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_currentdate_label" />
+
+    <TextView
+        android:id="@+id/tv_topfivemovies_columns"
+        android:layout_width="370dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="20dp"
+        android:text="Movie                 Release Date          Rating"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_topfivemovies_label" />
+
+    <TextView
+        android:id="@+id/tv_topfivemovies_movie1"
+        android:layout_width="137dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="21dp"
+        android:inputType="textMultiLine"
+        android:text="Movie 1"
+        app:layout_constraintBottom_toTopOf="@+id/tv_topfivemovies_movie2"
+        app:layout_constraintEnd_toStartOf="@+id/movie_1_releasedate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_topfivemovies_columns"
+        app:layout_editor_absoluteY="401dp" />
+
+    <TextView
+        android:id="@+id/movie_1_releasedate"
+        android:layout_width="158dp"
+        android:layout_height="33dp"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/movie_2_releasedate"
+        app:layout_constraintEnd_toStartOf="@+id/movie_1_rating"
+        app:layout_constraintStart_toEndOf="@+id/tv_topfivemovies_movie1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_topfivemovies_columns" />
+
+    <TextView
+        android:id="@+id/movie_1_rating"
+        android:layout_width="74dp"
+        android:layout_height="33dp"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/movie_2_rating"
+        app:layout_constraintStart_toEndOf="@+id/movie_1_releasedate"
+        app:layout_constraintTop_toBottomOf="@+id/tv_topfivemovies_columns" />
+
+    <TextView
+        android:id="@+id/tv_topfivemovies_movie2"
+        android:layout_width="136dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="21dp"
+        android:inputType="textMultiLine"
+        android:text="Movie 2"
+        app:layout_constraintBottom_toTopOf="@+id/tv_topfivemovies_movie3"
+        app:layout_constraintEnd_toStartOf="@+id/movie_2_releasedate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_topfivemovies_movie1" />
+
+    <TextView
+        android:id="@+id/movie_2_releasedate"
+        android:layout_width="158dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/movie_3_releasedate"
+        app:layout_constraintEnd_toStartOf="@+id/movie_2_rating"
+        app:layout_constraintStart_toEndOf="@+id/tv_topfivemovies_movie2"
+        app:layout_constraintTop_toBottomOf="@+id/movie_1_releasedate" />
+
+    <TextView
+        android:id="@+id/movie_2_rating"
+        android:layout_width="74dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/movie_3_rating"
+        app:layout_constraintStart_toEndOf="@+id/movie_2_releasedate"
+        app:layout_constraintTop_toBottomOf="@+id/movie_1_rating" />
+
+    <TextView
+        android:id="@+id/tv_topfivemovies_movie3"
+        android:layout_width="136dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="21dp"
+        android:inputType="textMultiLine"
+        android:text="Movie 3"
+        app:layout_constraintBottom_toTopOf="@+id/tv_topfivemovies_movie4"
+        app:layout_constraintEnd_toStartOf="@+id/movie_3_releasedate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_topfivemovies_movie2" />
+
+    <TextView
+        android:id="@+id/movie_3_releasedate"
+        android:layout_width="159dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/movie_4_releasedate"
+        app:layout_constraintEnd_toStartOf="@+id/movie_3_rating"
+        app:layout_constraintStart_toEndOf="@+id/tv_topfivemovies_movie3"
+        app:layout_constraintTop_toBottomOf="@+id/movie_2_releasedate" />
+
+    <TextView
+        android:id="@+id/movie_3_rating"
+        android:layout_width="72dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/movie_4_rating"
+        app:layout_constraintStart_toEndOf="@+id/movie_3_releasedate"
+        app:layout_constraintTop_toBottomOf="@+id/movie_2_rating" />
+
+    <TextView
+        android:id="@+id/tv_topfivemovies_movie4"
+        android:layout_width="136dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="21dp"
+        android:inputType="textMultiLine"
+        android:text="Movie 4"
+        app:layout_constraintBottom_toTopOf="@+id/tv_topfivemovies_movie5"
+        app:layout_constraintEnd_toStartOf="@+id/movie_4_releasedate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_topfivemovies_movie3" />
+
+    <TextView
+        android:id="@+id/movie_4_releasedate"
+        android:layout_width="159dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/movie_5_releasedate"
+        app:layout_constraintEnd_toStartOf="@+id/movie_4_rating"
+        app:layout_constraintStart_toEndOf="@+id/tv_topfivemovies_movie4"
+        app:layout_constraintTop_toBottomOf="@+id/movie_3_releasedate" />
+
+    <TextView
+        android:id="@+id/movie_4_rating"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/movie_5_rating"
+        app:layout_constraintStart_toEndOf="@+id/movie_4_releasedate"
+        app:layout_constraintTop_toBottomOf="@+id/movie_3_rating" />
+
+
+    <TextView
+        android:id="@+id/tv_topfivemovies_movie5"
+        android:layout_width="136dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="21dp"
+        android:inputType="textMultiLine"
+        android:text="Movie 5"
+        app:layout_constraintEnd_toStartOf="@+id/movie_5_releasedate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_topfivemovies_movie4" />
+
+    <TextView
+        android:id="@+id/movie_5_releasedate"
+        android:layout_width="158dp"
+        android:layout_height="38dp"
+        app:layout_constraintEnd_toStartOf="@+id/movie_5_rating"
+        app:layout_constraintStart_toEndOf="@+id/tv_topfivemovies_movie5"
+        app:layout_constraintTop_toBottomOf="@+id/movie_4_releasedate" />
+
+    <TextView
+        android:id="@+id/movie_5_rating"
+        android:layout_width="73dp"
+        android:layout_height="38dp"
+        app:layout_constraintStart_toEndOf="@+id/movie_5_releasedate"
+        app:layout_constraintTop_toBottomOf="@+id/movie_4_rating" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportBarGraph">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/BarChart"
+        android:layout_width="400dp"
+        android:layout_height="526dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="Number of Movies watched per month(in a Year)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_year"
+        android:layout_width="101dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="118dp"
+        android:entries="@array/year"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_SelectYear"
+        app:layout_constraintTop_toBottomOf="@+id/BarChart" />
+
+    <TextView
+        android:id="@+id/tv_SelectYear"
+        android:layout_width="92dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Select Year:"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_year"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BarChart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
